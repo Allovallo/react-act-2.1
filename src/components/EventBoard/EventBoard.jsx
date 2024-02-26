@@ -3,14 +3,13 @@ import { Event } from 'components/Event/Event';
 import css from './EventBoard.module.css';
 
 export const EventBoard = ({ events }) => {
-    console.log(events);
     return (
         <div className={css.eventBoard}>
             {events.map(({name, location, speaker, type, time}) =>
                 <Event
                     key={name}
                     name={name}
-                    locaion={location}
+                    location={location}
                     speaker={speaker}
                     type={type}
                     start={time.start}
@@ -28,10 +27,10 @@ EventBoard.propTypes = {
             location: PropTypes.string.isRequired,
             speaker: PropTypes.string.isRequired,
             type: PropTypes.string.isRequired,
-            time: {
+            time: PropTypes.exact({
                 start: PropTypes.string.isRequired,
                 end: PropTypes.string.isRequired,
-            },
+            }),
         }),
     ),
 };
