@@ -26,7 +26,26 @@ export const Info = styled.p`
     line-height: 24px;
     font-weight: 400;
     letter-spacing: 0.25px;
+
+    svg {
+        display: block;
+        margin-right: 8px;
+        color: var(--color-secondary-text);
+    }
 `;
+
+const setBgColor = (props) => {
+    switch (props.eventType) {
+        case 'free':
+            return 'var(--color-red)';
+        case 'paid':
+            return 'var(--color-yellow)';
+        case 'vip':
+            return 'var(--color-green)';
+        default:
+            return '#000';
+    }
+}
 
 export const Chip = styled.span`
     position: absolute;
@@ -37,4 +56,7 @@ export const Chip = styled.span`
     text-transform: uppercase;
     background-color: #000;
     color: #fff;
+
+    background-color: ${setBgColor}
 `;
+
