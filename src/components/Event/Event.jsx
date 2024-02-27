@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { FaMapMarkerAlt, FaUserAlt, FaCalendarAlt, FaClock } from 'react-icons/fa';
 import { iconSize } from 'components/constants';
 import { formatEventStart, formatEventDuration } from 'utils';
-import { Card, EventName, Info, Chip } from './EventStyled';
+import { Card, EventName, Info, Chip } from './Event.styled';
 
 export const Event = ({name, location, speaker, type, start, end}) => {
     const formattedStart = formatEventStart(start);
