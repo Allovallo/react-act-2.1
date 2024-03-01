@@ -10,7 +10,7 @@
 },
 {
     "name": "Perfection",
-    "location": "Corvus",
+    "location": "Novus",
     "speaker": "Jacob Mercer",
     "type": "paid",
     "time": {
@@ -20,7 +20,7 @@
 },
 {
     "name": "Pollution",
-    "location": "Corvus",
+    "location": "Normus",
     "speaker": "Jacob Mercer",
     "type": "free",
     "time": {
@@ -30,7 +30,7 @@
 },
 {
     "name": "Precision",
-    "location": "Corvus",
+    "location": "Botus",
     "speaker": "Jacob Mercer",
     "type": "free",
     "time": {
@@ -40,7 +40,7 @@
 },
 {
     "name": "Propelling",
-    "location": "Corvus",
+    "location": "Totus",
     "speaker": "Jacob Mercer",
     "type": "vip",
     "time": {
@@ -50,7 +50,7 @@
 },
 {
     "name": "Protelling",
-    "location": "Corvus",
+    "location": "Coltus",
     "speaker": "Jacob Mercer",
     "type": "free",
     "time": {
